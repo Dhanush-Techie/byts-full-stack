@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIPLE ASSIGNMENT</title>
+    <link rel="stylesheet" href="land.css">
+</head>
+
+<body>
+    <header>
+        <h2>Projects</h2>
+        <nav>
+            <li><a href="#add">ADD</a></li>
+            <li><a href="#stop">STOP WATCH</a></li>
+            <li><a href="#deg">FRAN TO CEL</a></li>
+            <li><a href="#calc">CALC</a></li>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="add">
+            <input type="number" id="box1">
+            <input type="number" id="box2">
+            <div id="addresult">ANSWER HERE</div>
+            <button onclick="addtwonumber()">ADD</button>
+        </section>
+        <section id="stop">
+            <div id="result">0</div>
+            <button onclick="start()">START</button>
+            <button onclick="stop()">STOP</button>
+            <button onclick="restart()">RESET</button>
+        </section>
+        <section id="deg">
+            <input type="number" placeholder="35 deg" id="deginput">
+            <div id="degresult"></div>
+            <button id="degbtn" onclick="frantocel()">DEGREE TO CElCIUS</button>
+        </section>
+        <section id="calc">
+            <br>
+            <div id="calcresult">0</div>
+            <br />
+            <button onclick="calc('1')">1</button>
+            <button onclick="calc('2')">2</button>
+            <button onclick="calc('3')">3</button>
+            <br />
+            <button onclick="calc('4')">4</button>
+            <button onclick="calc('5')">5</button>
+            <button onclick="calc('6')">6</button>
+            <br />
+            <button onclick="calc('7')">7</button>
+            <button onclick="calc('8')">8</button>
+            <button onclick="calc('9')">9</button>
+            <br />
+            <button onclick="calc('0')" id="zero">0</button>
+            <br />
+            <br />
+            
+            <button onclick="calc('+')">+</button>
+            <button onclick="calc('-')">-</button>
+            <button onclick="calc('/')">/</button>
+            <br />
+            <button onclick="calc('*')">*</button>
+            <button onclick="del()">del</button>
+            <button onclick="elavaluate() " id="eval-btn">=</button>
+            <br />
+
+        </section>
+    </div>
+    <script src="landingpage.js"></script>
+</body>
+
+</html>

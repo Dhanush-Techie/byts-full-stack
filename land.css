@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playpen+Sans+Arabic:wght@100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'playpen sans arabic', sans-serif;
+}
+
+body {
+    background: #dcdbdb;
+    color: black;
+    padding: 20px;
+}
+
+header {
+    background: rgb(64, 140, 171);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav li a:hover {
+    background: skyblue;
+}
+
+#content section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#add input {
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+}
+
+#addresult {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0176b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #003b87;
+}
+
+#stop #result {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#deg input {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+#calcresult {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: #dcdbdb;
+    padding: 10px;
+    width: 220px;
+    border-radius: 6px;
+    text-align: right;
+}
+#zero{
+    
+    position: relative;
+    left: 75px;
+}
+#calc button {
+    width: 60px;
+    margin: 5px;
+}
+#eval-btn{
+    width: 60px;
+    margin: 5px;
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+#addresult {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
